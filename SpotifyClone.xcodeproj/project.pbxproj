@@ -29,6 +29,7 @@
 		BE549BA229DD83320036CEAA /* AudioTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549BA129DD83320036CEAA /* AudioTrack.swift */; };
 		BE549BA429DD834B0036CEAA /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549BA329DD834B0036CEAA /* Artist.swift */; };
 		BE549BA629DD835D0036CEAA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549BA529DD835D0036CEAA /* UserProfile.swift */; };
+		BE549BE929DDD0E80036CEAA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549BE829DDD0E80036CEAA /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		BE549BA129DD83320036CEAA /* AudioTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioTrack.swift; sourceTree = "<group>"; };
 		BE549BA329DD834B0036CEAA /* Artist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
 		BE549BA529DD835D0036CEAA /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		BE549BE829DDD0E80036CEAA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 			children = (
 				BE549B6F29DD7C3D0036CEAA /* Assets.xcassets */,
 				BE549B6629DD7C3A0036CEAA /* AppDelegate.swift */,
+				BE549BE829DDD0E80036CEAA /* Extensions.swift */,
 				BE549B6829DD7C3A0036CEAA /* SceneDelegate.swift */,
 			);
 			path = Resources;
@@ -262,6 +265,7 @@
 				BE549B8E29DD81380036CEAA /* AuthViewController.swift in Sources */,
 				BE549B8729DD80490036CEAA /* LibraryViewController.swift in Sources */,
 				BE549BA629DD835D0036CEAA /* UserProfile.swift in Sources */,
+				BE549BE929DDD0E80036CEAA /* Extensions.swift in Sources */,
 				BE549B6929DD7C3A0036CEAA /* SceneDelegate.swift in Sources */,
 				BE549BA429DD834B0036CEAA /* Artist.swift in Sources */,
 				BE549B9629DD81AD0036CEAA /* PlaylistViewController.swift in Sources */,

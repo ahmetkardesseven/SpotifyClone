@@ -10,6 +10,10 @@ import Foundation
 final class AuthMnager {
     static let shared = AuthMnager()
     
+    
+    
+    
+    
     private init() { }
     
     var isSignedIn: Bool {
