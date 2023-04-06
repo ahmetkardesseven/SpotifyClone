@@ -32,6 +32,7 @@
 		BE549BE929DDD0E80036CEAA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549BE829DDD0E80036CEAA /* Extensions.swift */; };
 		BE549BEB29DE2DCD0036CEAA /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549BEA29DE2DCD0036CEAA /* AuthResponse.swift */; };
 		BE549BED29DEEEB40036CEAA /* SettingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549BEC29DEEEB40036CEAA /* SettingModels.swift */; };
+		BE549BF029DEFD960036CEAA /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = BE549BEF29DEFD960036CEAA /* SDWebImage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE549BF029DEFD960036CEAA /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -204,6 +206,9 @@
 			dependencies = (
 			);
 			name = SpotifyClone;
+			packageProductDependencies = (
+				BE549BEF29DEFD960036CEAA /* SDWebImage */,
+			);
 			productName = SpotifyClone;
 			productReference = BE549B6329DD7C3A0036CEAA /* SpotifyClone.app */;
 			productType = "com.apple.product-type.application";
@@ -232,6 +237,9 @@
 				Base,
 			);
 			mainGroup = BE549B5A29DD7C3A0036CEAA;
+			packageReferences = (
+				BE549BEE29DEFD950036CEAA /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = BE549B6429DD7C3A0036CEAA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -488,6 +496,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		BE549BEE29DEFD950036CEAA /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BE549BEF29DEFD960036CEAA /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BE549BEE29DEFD950036CEAA /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = BE549B5B29DD7C3A0036CEAA /* Project object */;
 }
