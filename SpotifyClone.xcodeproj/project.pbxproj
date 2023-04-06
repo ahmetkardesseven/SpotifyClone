@@ -31,6 +31,7 @@
 		BE549BA629DD835D0036CEAA /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549BA529DD835D0036CEAA /* UserProfile.swift */; };
 		BE549BE929DDD0E80036CEAA /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549BE829DDD0E80036CEAA /* Extensions.swift */; };
 		BE549BEB29DE2DCD0036CEAA /* AuthResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549BEA29DE2DCD0036CEAA /* AuthResponse.swift */; };
+		BE549BED29DEEEB40036CEAA /* SettingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549BEC29DEEEB40036CEAA /* SettingModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,7 @@
 		BE549BA529DD835D0036CEAA /* UserProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
 		BE549BE829DDD0E80036CEAA /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		BE549BEA29DE2DCD0036CEAA /* AuthResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthResponse.swift; sourceTree = "<group>"; };
+		BE549BEC29DEEEB40036CEAA /* SettingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				BE549BA329DD834B0036CEAA /* Artist.swift */,
 				BE549BA529DD835D0036CEAA /* UserProfile.swift */,
 				BE549BEA29DE2DCD0036CEAA /* AuthResponse.swift */,
+				BE549BEC29DEEEB40036CEAA /* SettingModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				BE549BEB29DE2DCD0036CEAA /* AuthResponse.swift in Sources */,
 				BE549BA229DD83320036CEAA /* AudioTrack.swift in Sources */,
 				BE549B6729DD7C3A0036CEAA /* AppDelegate.swift in Sources */,
+				BE549BED29DEEEB40036CEAA /* SettingModels.swift in Sources */,
 				BE549B8E29DD81380036CEAA /* AuthViewController.swift in Sources */,
 				BE549B8729DD80490036CEAA /* LibraryViewController.swift in Sources */,
 				BE549BA629DD835D0036CEAA /* UserProfile.swift in Sources */,
