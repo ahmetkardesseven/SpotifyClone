@@ -51,6 +51,7 @@
 		BE549C9329E050B90036CEAA /* PlayListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549C9229E050B90036CEAA /* PlayListViewController.swift */; };
 		BE549C9529E0513C0036CEAA /* LibraryPlaylistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549C9429E0513C0036CEAA /* LibraryPlaylistViewController.swift */; };
 		BE549C9729E051610036CEAA /* LibraryAlbumsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549C9629E051610036CEAA /* LibraryAlbumsViewController.swift */; };
+		BE549C9A29E075130036CEAA /* PlaybackPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE549C9929E075130036CEAA /* PlaybackPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -99,6 +100,7 @@
 		BE549C9229E050B90036CEAA /* PlayListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayListViewController.swift; sourceTree = "<group>"; };
 		BE549C9429E0513C0036CEAA /* LibraryPlaylistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryPlaylistViewController.swift; sourceTree = "<group>"; };
 		BE549C9629E051610036CEAA /* LibraryAlbumsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryAlbumsViewController.swift; sourceTree = "<group>"; };
+		BE549C9929E075130036CEAA /* PlaybackPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaybackPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		BE549B6529DD7C3A0036CEAA /* SpotifyClone */ = {
 			isa = PBXGroup;
 			children = (
+				BE549C9829E074E40036CEAA /* Presenter */,
 				BE549B7F29DD7CC30036CEAA /* Resources */,
 				BE549B7E29DD7CB50036CEAA /* Managers */,
 				BE549C6929DF86C90036CEAA /* ViewModel */,
@@ -276,6 +279,14 @@
 			path = Search;
 			sourceTree = "<group>";
 		};
+		BE549C9829E074E40036CEAA /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				BE549C9929E075130036CEAA /* PlaybackPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -353,6 +364,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE549C9329E050B90036CEAA /* PlayListViewController.swift in Sources */,
+				BE549C9A29E075130036CEAA /* PlaybackPresenter.swift in Sources */,
 				BE549C7A29DF9A4C0036CEAA /* RecommendationsResponse.swift in Sources */,
 				BE549C7E29DF9AAA0036CEAA /* LibraryPlaylistResponse.swift in Sources */,
 				BE549C7229DF99690036CEAA /* NewReleasesResponse.swift in Sources */,
