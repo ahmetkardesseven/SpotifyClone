@@ -1,13 +1,13 @@
 //
-//  SearchResultsViewController.swift
+//  LibraryAlbumsViewController.swift
 //  SpotifyClone
 //
-//  Created by ahmet kardesseven on 5.04.2023.
+//  Created by ahmet kardesseven on 7.04.2023.
 //
 
 import UIKit
 
-class SearchResultsViewController: UIViewController {
+class LibraryAlbumsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
