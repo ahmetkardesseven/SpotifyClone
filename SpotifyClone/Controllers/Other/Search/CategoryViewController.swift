@@ -52,7 +52,7 @@ class CategoryViewController: UIViewController {
         collectionView.dataSource = self
         collectionView.register(PlaylistsCollectionViewCell.self,
                                 forCellWithReuseIdentifier: PlaylistsCollectionViewCell.identifier)
-        APIManager.shared.getCategoryPlaylist(category: category) { [weak self] result in
+        APICaller.shared.getCategoryPlaylist(category: category) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let playlists):

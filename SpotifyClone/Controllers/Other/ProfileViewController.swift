@@ -62,7 +62,7 @@ class ProfileViewController: UIViewController, UITableViewDataSource, UITableVie
     private func createTableHeader(with string: String?) {
         guard let urlString = string, let url = URL(string: urlString) else { return }
         let headerView = UIView(frame: CGRect(x: 0, y: 0, width: view.width, height: view.width / 1.5))
-        let imageSize: CGFloat = headerView.height / 2
+        let imageSize: CGFloat = headerView.heigth / 2
         let imageView = UIImageView(frame: CGRect(x: 0, y: 0, width: imageSize, height: imageSize))
         headerView.addSubview(imageView)
         imageView.center = headerView.center

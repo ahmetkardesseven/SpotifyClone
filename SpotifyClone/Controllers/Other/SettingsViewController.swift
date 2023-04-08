@@ -45,7 +45,7 @@ class SettingsViewController: UIViewController, UITableViewDelegate, UITableView
         let actionSheet = UIAlertController(title: "Sign Out", message: "Do you want to sign out?", preferredStyle: .actionSheet)
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         actionSheet.addAction(UIAlertAction(title: "Sign Out", style: .destructive, handler: { _ in
-            AuthManager.shared.signOut { [weak self] success in
+            AuthMnager.shared.signOut { [weak self] success in
                 if success {
                     DispatchQueue.main.async {
                         let navC = UINavigationController(rootViewController: WelcomeViewController())

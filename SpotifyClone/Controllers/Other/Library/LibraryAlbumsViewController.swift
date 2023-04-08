@@ -47,7 +47,7 @@ class LibraryAlbumsViewController: UIViewController {
     }
     
     private func fetchAlbums() {
-        APIManager.shared.getSavedAlbums { [weak self] result in
+        APICaller.shared.getSavedAlbums { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let albums):

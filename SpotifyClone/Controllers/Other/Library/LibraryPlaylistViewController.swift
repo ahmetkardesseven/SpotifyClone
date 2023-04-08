@@ -55,7 +55,7 @@ class LibraryPlaylistViewController: UIViewController {
     }
     
     func fetchPlaylists() {
-        APIManager.shared.getCurrentUserPlaylist { [weak self] result in
+        APICaller.shared.getCurrentUserPlaylist { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let playlist):
@@ -88,7 +88,7 @@ class LibraryPlaylistViewController: UIViewController {
             guard let field = alert.textFields?.first, let text = field.text, !text.trimmingCharacters(in: .whitespaces).isEmpty else {
                 return
             }
-            APIManager.shared.createPlaylist(with: text) { [weak self] success in
+            APICaller.shared.createPlaylist(with: text) { [weak self] success in
                 DispatchQueue.main.async {
                     if success {
                         HapticsManager.shared.vibrate(for: .success)
@@ -154,7 +154,7 @@ extension LibraryPlaylistViewController: UITableViewDelegate, UITableViewDataSou
             let deleteAction = UIAction(
                 title: "Unfollow",
                 image: UIImage(systemName: "minus.circle")) { [weak self] action in
-                    APIManager.shared.unfollowPlaylist(playlist: playlistToUnfollow) { success in
+                    APICaller.shared.unfollowPlaylist(playlist: playlistToUnfollow) { success in
                         DispatchQueue.main.async {
                             if success {
                                 self?.playlists.remove(at: indexPath.row)

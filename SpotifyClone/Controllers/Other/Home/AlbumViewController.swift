@@ -41,7 +41,7 @@ class AlbumViewController: UIViewController {
     }
     @objc private func didTapSave() {
         let albumWillBeSaved = self.album
-        APIManager.shared.saveAlbum(album: albumWillBeSaved) { [weak self] success in
+        APICaller.shared.saveAlbum(album: albumWillBeSaved) { [weak self] success in
             if success {
                 HapticsManager.shared.vibrate(for: .success)
                 print("Saved.")
@@ -56,7 +56,7 @@ class AlbumViewController: UIViewController {
         collectionView.frame = view.bounds
     }
     private func fetchData() {
-        APIManager.shared.getAlbumDetails(album: album) { result in
+        APICaller.shared.getAlbumDetails(album: album) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let model):

@@ -58,7 +58,7 @@ class PlayListViewController: UIViewController {
 
     
     private func fetchPlaylists() {
-        APIManager.shared.getPlaylistDetails(playlist: playlist) { [weak self] result in
+        APICaller.shared.getPlaylistDetails(playlist: playlist) { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let model):
@@ -91,7 +91,7 @@ class PlayListViewController: UIViewController {
         actionSheet.addAction(UIAlertAction(title: "Cancel", style: .cancel))
         actionSheet.addAction(UIAlertAction(title: "Remove", style: .destructive, handler: {[weak self] _ in
             guard let self = self else { return }
-            APIManager.shared.removeTrackFromPlaylist(track: trackToDelete, playlist: self.playlist) { success in
+            APICaller.shared.removeTrackFromPlaylist(track: trackToDelete, playlist: self.playlist) { success in
                 DispatchQueue.main.async {
                     if success {
                         self.tracks.remove(at: indexPath.row)

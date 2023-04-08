@@ -66,7 +66,7 @@ class HomeViewController: UIViewController {
         actionSheet.addAction(UIAlertAction(title: "Add to Playlist", style: .default, handler: { [weak self] _ in
             let vc = LibraryPlaylistViewController()
             vc.selectionHandler =  { playlist in
-                APIManager.shared.addTrackToPlaylist(
+                APICaller.shared.addTrackToPlaylist(
                     track: model,
                     playlist: playlist) { succes in
                      print("Added to playlist success: \(succes)")
@@ -88,7 +88,7 @@ class HomeViewController: UIViewController {
         var featuredPlaylists: FeaturedPlaylistsResponse?
         var recommendedTracks: RecommendationsResponse?
         //New  Releases
-        APIManager.shared.getNewReleases { result in
+        APICaller.shared.getNewReleases { result in
             defer {
                 group.leave()
             }
@@ -100,7 +100,7 @@ class HomeViewController: UIViewController {
             }
         }
         //FeaturedPlayLists
-        APIManager.shared.getFeaturedPlaylists { result in
+        APICaller.shared.getFeaturedPlaylists { result in
             defer {
                 group.leave()
             }
@@ -112,7 +112,7 @@ class HomeViewController: UIViewController {
             }
         }
         //Recommended
-        APIManager.shared.getRecommendedGenres { result in
+        APICaller.shared.getRecommendedGenres { result in
             
             switch result {
             case .success(let model):
@@ -123,7 +123,7 @@ class HomeViewController: UIViewController {
                         seeds.insert(random)
                     }
                 }
-                APIManager.shared.getRecommendations(genres: seeds) { recommendedResults in
+                APICaller.shared.getRecommendations(genres: seeds) { recommendedResults in
                     defer {
                         group.leave()
                     }

@@ -59,7 +59,7 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
         fetchData()
     }
     private func fetchData() {
-        APIManager.shared.getAllCategories { [weak self] result in
+        APICaller.shared.getAllCategories { [weak self] result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let models):
@@ -95,7 +95,7 @@ class SearchViewController: UIViewController, UISearchResultsUpdating, UISearchB
             return
         }
         resultsController.delegate = self
-        APIManager.shared.search(with: query) { result in
+        APICaller.shared.search(with: query) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let results):
