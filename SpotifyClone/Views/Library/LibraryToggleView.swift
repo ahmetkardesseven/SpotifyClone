@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 protocol LibraryToggleViewDelegate: AnyObject {
     func libraryToggleViewDidTapPlaylist()
