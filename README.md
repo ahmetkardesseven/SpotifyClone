@@ -8,17 +8,29 @@ I built this project myself to experience more MVVM Pattern, Protocols, URLSessi
 I'm open to any kind of feedback. Thank you. (Don’t forget turn up the volume)
 
 Technology and Structures
+
 -MVVM Pattern
+
 -UIKIT (Programmatically)
+
 -URL Session
+
 -REST API 
+
 -Webkit
+
 -AVFoundation
+
 -Tabbar Controller
+
 -Search Controller
+
 -CollectionView
+
 -TableView
+
 -Navigation and more.
 
 External Dependencies
+
 -SDWebImage
